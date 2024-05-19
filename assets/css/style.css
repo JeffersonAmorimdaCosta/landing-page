@@ -211,6 +211,14 @@ p {
     margin-top: -1.6rem;
 }
 
+.gallery-heading {
+    margin-bottom: 8rem;
+}
+
+.gallery-heading h2 {
+    margin-bottom: 0;
+}
+
 .gallery-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
