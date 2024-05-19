@@ -82,7 +82,7 @@ p {
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 8rem var(--gap);
 }
 
 .section {
@@ -151,7 +151,7 @@ p {
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text h2 {
@@ -166,7 +166,7 @@ p {
 }
 
 .news-coverage-content {
-    height: 100vh;
+    min-height: 100vh;
     max-width: 64rem;
     display: flex;
     flex-direction: column;
@@ -177,7 +177,7 @@ p {
 .top3-content {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
     counter-reset: top3-counter;
     row-gap: 6.5rem;
