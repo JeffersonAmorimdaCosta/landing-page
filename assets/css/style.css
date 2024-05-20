@@ -39,6 +39,7 @@ h2 {
     font-size: 6rem;
     margin-bottom: 5rem;
     text-transform: uppercase;
+    line-height: 1.2;
 }
 
 h3 {
@@ -155,12 +156,6 @@ p {
     min-height: 100vh;
 }
 
-.intro-text h2 {
-    font-size: 6rem;
-    margin-bottom: 5rem;
-    line-height: 1.2;
-}
-
 .intro-img img {
     max-width: 100%;
     height: auto;
@@ -272,6 +267,7 @@ table tfoot td{
 
 fieldset {
     border: none;
+    /* max-width: 100%; */
 }
 
 fieldset legend {
@@ -353,13 +349,78 @@ fieldset legend {
 }
 
 footer {
-    height: 13rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
     font-weight: bold;
 }
 
 footer p {
     margin: 0;
 }
+
+
+@media (max-width: 1020px) {
+    h2 {
+        font-size: 5rem;
+    }
+    .grid-form {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1.3fr 1fr;
+        grid-template-areas: 
+        "first-name last-name" 
+        "email email" 
+        "message message" 
+        "submit submit";
+    }
+}
+
+@media (max-width: 800px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+
+    .top3-internal-content {
+        flex-wrap: wrap;
+    }
+
+    .gallery-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    h2 {
+        font-size: 4.5rem;
+    }
+    .grid-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1.3fr 1fr;
+        grid-template-areas: 
+        "first-name" 
+        "last-name" 
+        "email" 
+        "message" 
+        "submit";
+    }
+
+    .gallery-content {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-img img {
+        width: 100%;
+    }
+
+
+
+    .submit {
+        width: 100%;
+    }
+}
+
