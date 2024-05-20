@@ -270,6 +270,88 @@ table tfoot td{
     text-align: center;
 }
 
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    font-size: 2rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.grid-form {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "first-name last-name email" 
+    "message message message" 
+    "submit submit submit";
+    
+    gap: var(--gap);
+}
+
+.first-name {
+    grid-area: first-name;
+}
+
+.last-name {
+    grid-area: last-name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.message {
+    grid-area: message;
+}
+
+.message textarea {
+    height: 100%;
+}
+
+.submit {
+    grid-area: submit;
+}
+
+.field {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.field input, textarea {
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+
+.field ::placeholder {
+    font-size: 2rem;
+}
+
+.submit {
+    height: 7rem;
+    width: 23rem;
+    background-color: transparent;
+    color: var(--white-color);
+    border: .5rem solid var(--white-color);
+    font-size: 2.4rem;
+    transition: all 350ms ease;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
 footer {
     height: 13rem;
     display: flex;
