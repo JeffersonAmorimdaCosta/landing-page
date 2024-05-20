@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <input id="close-menu" type="checkbox" aria-label="Close menu" role="button" class="close-menu">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <header class="menu white-bg">
-        <div class="main-content menu-content">
+        <div class="main-content menu-content" onclick="getElementById('close-menu').checked = false;">
             <h1>
                 <a href="#">LOGO</a>
             </h1>
@@ -109,22 +111,22 @@
                 </div>
                 <div class="gallery-content">
                     <div class="gallery-img">
-                        <img src="http://source.unsplash.com/random/360x360/?r=1" alt="imagem aleatória do unsplash.">
+                        <img src="http://source.unsplash.com/random/360x360/?r=1" alt="random image form unsplash.">
                     </div>
                     <div class="gallery-img">
-                        <img src="http://source.unsplash.com/random/360x360/?r=2" alt="imagem aleatória do unsplash.">
+                        <img src="http://source.unsplash.com/random/360x360/?r=2" alt="random image form unsplash.">
                     </div>
                     <div class="gallery-img">
-                        <img src="http://source.unsplash.com/random/360x360/?r=3" alt="imagem aleatória do unsplash.">
+                        <img src="http://source.unsplash.com/random/360x360/?r=3" alt="random image form unsplash.">
                     </div>
                     <div class="gallery-img">
-                        <img src="http://source.unsplash.com/random/360x360/?r=4" alt="imagem aleatória do unsplash.">
+                        <img src="http://source.unsplash.com/random/360x360/?r=4" alt="random image form unsplash.">
                     </div>
                     <div class="gallery-img">
-                        <img src="http://source.unsplash.com/random/360x360/?r=5" alt="imagem aleatória do unsplash.">
+                        <img src="http://source.unsplash.com/random/360x360/?r=5" alt="random image form unsplash.">
                     </div>
                     <div class="gallery-img">
-                        <img src="http://source.unsplash.com/random/360x360/?r=6" alt="imagem aleatória do unsplash.">
+                        <img src="http://source.unsplash.com/random/360x360/?r=6" alt="random image form unsplash.">
                     </div>
                 </div>
             </div>
@@ -268,5 +270,7 @@
             </p>
         </div>
     </footer>
+    <a class="back-to-top" href="#">🡹</a>
+    <!-- ⮝ 🡹 -->
 </body>
 </html>
